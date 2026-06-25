@@ -11,7 +11,7 @@ para el primer tiempo**. Los dos goles del 1er tiempo (ambos de Argentina):
 | 1 | 22:24 | Messi | Penal | Argentina 46.6% · Francia 53.4% |
 | 2 | 35:22 | Di María | Jugada | Argentina 44.6% · Francia 55.4% |
 
-## Cómo correrlo
+## Cómo correrlo (rápido)
 
 ```bash
 pip install -r requirements.txt
@@ -19,6 +19,65 @@ jupyter notebook voronoi_final_2022.ipynb     # o: jupyter nbconvert --to notebo
 ```
 
 El notebook descarga los datos (con caché en `data/`) y regenera las figuras en `output/`.
+
+## Cómo bajarlo y ejecutarlo paso a paso (para quien no usa Python a menudo)
+
+> No hace falta saber programar: son comandos para copiar y pegar.
+
+### 1. Instalar Python
+- **Windows:** descargá Python desde <https://www.python.org/downloads/> y, al instalar,
+  **tildá la casilla "Add Python to PATH"** antes de "Install Now".
+- **Mac:** ya suele venir Python, pero conviene instalar el oficial desde el mismo link.
+
+Para comprobar que quedó instalado, abrí una terminal:
+- Windows: menú Inicio → escribí `cmd` → Enter.
+- Mac: Spotlight (lupa) → escribí `Terminal` → Enter.
+
+y escribí (en Windows usá `python`, en Mac `python3`):
+```bash
+python --version
+```
+Tiene que aparecer algo como `Python 3.11.x`.
+
+### 2. Bajar este proyecto
+**Opción fácil (sin git):** entrá a la página del repositorio en GitHub, botón verde
+**`Code` → `Download ZIP`**, y descomprimí el ZIP en una carpeta (p. ej. el Escritorio).
+
+**Opción con git** (si lo tenés instalado):
+```bash
+git clone <URL-del-repositorio>
+```
+
+### 3. Entrar a la carpeta del proyecto
+En la terminal, "entrá" a la carpeta que descargaste con `cd` (cambiar directorio):
+```bash
+cd Desktop/Stats_futbol        # ajustá la ruta a donde lo hayas dejado
+```
+Tip: en Windows podés escribir `cd ` (con espacio) y arrastrar la carpeta a la terminal.
+
+### 4. Instalar las librerías que usa el análisis
+```bash
+pip install -r requirements.txt
+```
+(En Mac, si `pip` no funciona, probá `pip3`.) Esto baja todo lo necesario una sola vez.
+
+### 5. Abrir el notebook
+```bash
+jupyter notebook
+```
+Se abre el navegador con una lista de archivos: hacé clic en **`voronoi_final_2022.ipynb`**.
+Una vez abierto, en el menú elegí **`Run → Run All Cells`** (Ejecutar todo). Va corriendo
+las celdas de arriba hacia abajo; al terminar vas a ver los GIFs dentro del notebook y los
+archivos nuevos en la carpeta `output/`.
+
+> La primera vez descarga los datos de StatsBomb (necesitás internet) y tarda 1–2 minutos.
+> Las siguientes veces usa la copia guardada en `data/` y va más rápido.
+
+### ¿No querés instalar nada?
+Podés abrir el notebook directo en el navegador con **Google Colab**: entrá a
+<https://colab.research.google.com>, `Archivo → Subir notebook`, elegí
+`voronoi_final_2022.ipynb` y, en la primera celda, agregá una línea
+`!pip install mplsoccer shapely statsbombpy` antes de ejecutar todo.
 
 ## Resultados (`output/`)
 
