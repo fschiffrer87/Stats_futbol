@@ -1,0 +1,11 @@
+# Datos crudos StatsBomb (se re-descargan con caché desde el notebook)
+data/*.json
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Scratch
+scratch_test.py
+output/_verify.png
