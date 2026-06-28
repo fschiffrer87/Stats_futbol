@@ -1,0 +1,80 @@
+{
+  "source": "footballcsv",
+  "dataset": "England Premier League 2021-22",
+  "columns": [
+    "Date",
+    "Team 1",
+    "FT",
+    "HT",
+    "Team 2"
+  ],
+  "dtypes": {
+    "Date": "str",
+    "Team 1": "str",
+    "FT": "str",
+    "HT": "str",
+    "Team 2": "str"
+  },
+  "raw_missing_values": {
+    "Date": 0,
+    "Team 1": 0,
+    "FT": 0,
+    "HT": 0,
+    "Team 2": 0
+  },
+  "schema_missing_values": {
+    "date": 0,
+    "season": 0,
+    "competition": 0,
+    "country": 0,
+    "home_team": 0,
+    "away_team": 0,
+    "home_goals": 0,
+    "away_goals": 0,
+    "neutral": 380,
+    "stage": 380,
+    "round": 380,
+    "source": 0,
+    "source_file": 0,
+    "notes": 380
+  },
+  "first_date": "2021-08-13",
+  "last_date": "2022-05-22",
+  "teams_detected_count": 20,
+  "teams_detected_sample": [
+    "Arsenal",
+    "Aston Villa",
+    "Brentford",
+    "Brighton",
+    "Burnley",
+    "Chelsea",
+    "Crystal Palace",
+    "Everton",
+    "Leeds",
+    "Leicester",
+    "Liverpool",
+    "Man City",
+    "Man United",
+    "Newcastle",
+    "Norwich",
+    "Southampton",
+    "Tottenham",
+    "Watford",
+    "West Ham",
+    "Wolves"
+  ],
+  "competitions_detected": [
+    "Premier League"
+  ],
+  "number_of_matches": 380,
+  "elo_minimum_present": {
+    "home_team": true,
+    "away_team": true,
+    "home_goals": true,
+    "away_goals": true
+  },
+  "has_all_elo_minimum": true,
+  "duplicate_rows": 0,
+  "encoding_problem": false,
+  "format_issues": []
+}

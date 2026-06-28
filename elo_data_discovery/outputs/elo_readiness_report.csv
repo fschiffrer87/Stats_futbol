@@ -1,0 +1,7 @@
+source,dataset_name,country,data_format,access_type,historical_depth_score,cleanliness_score,elo_readiness_score,score_breakdown
+footballcsv,England Premier League 2021-22,England,csv,download_free,alto,alto,95,+30 fecha clara; +20 equipos local/visitante; +20 goles local/visitante; +10 competición; +10 temporada; +5 cobertura histórica alta
+openfootball_sa,Argentina Primera Division 2025,Argentina,txt,download_free,medio,medio,90,+30 fecha clara; +20 equipos local/visitante; +20 goles local/visitante; +10 competición; +10 temporada; +3 cobertura histórica media; -3 requiere parseo
+openfootball,Argentina Primera Division 2025,Argentina,json,download_free,bajo,alto,84,+30 fecha clara; +20 equipos local/visitante; +20 goles local/visitante; +10 competición; +10 temporada; -3 faltantes en home_goals (14%); -3 faltantes en away_goals (14%)
+footballdata_uk,"Argentina (extra leagues, todas las temporadas)",Argentina,csv,network_restricted,medio,alto,0,
+fbref,Argentina Primera Division (scores & fixtures),Argentina,html,optional_scrape,desconocido,bajo,0,
+kaggle,Argentina football datasets (varios),Argentina,csv,manual_auth,desconocido,alto,0,

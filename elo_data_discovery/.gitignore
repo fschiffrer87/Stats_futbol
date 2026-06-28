@@ -1,0 +1,15 @@
+# Cache de descargas (se regenera con la herramienta)
+data/raw/cache/*
+!data/raw/cache/.gitkeep
+
+# Datos procesados intermedios
+data/processed/*
+!data/processed/.gitkeep
+
+# Log de errores
+outputs/errors.log
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
